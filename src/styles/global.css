@@ -1,0 +1,43 @@
+/* Boutons */
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-normal {
+    background-color: #87cefa; /* Bleu ciel */
+    color: white;
+}
+
+.button-active {
+    background-color: #ffa500; /* Orange */
+    color: white;
+}
+
+.button-disabled {
+    background-color: #d3d3d3; /* Gris */
+    color: #808080;
+    cursor: not-allowed;
+}
+
+button:hover:not(.button-disabled) {
+    filter: brightness(0.9);
+}
+
+button:active:not(.button-disabled) {
+    filter: brightness(0.8);
+}
+
+.board {
+    flex: 1;
+    margin: 20px;
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
